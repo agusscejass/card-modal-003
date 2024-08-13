@@ -1,0 +1,191 @@
+/*--------- FUENTES ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*--------- RESET -----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*--------- VARIABLES ---------*/
+:root {
+    --background: #E0E0E0;
+    --backgound-box: #FFFFFF;
+    --card-and-header: #203774;
+    --text: #000000;
+    --border-icon: #4868BD;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*--------- CONTENEDOR ---------*/
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/*--------- CAJA CARD ----------*/
+.box-card {
+    width: 859px;
+    height: 750px;
+    background-color: var(--backgound-box);
+    border-radius: 10px;
+}
+
+/*-------- HEADER ------------*/
+.title-salir {
+    background-color: var(--card-and-header);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.title-salir, .salir ,h2 {
+    color: white;
+}
+
+.title-salir, h2 {
+    font-weight: 400;
+}
+
+.salir {
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/*--------- CALENDARIO ----------*/
+.caja-calendario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.items > span {
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.transparent {
+    color: gray;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.fecha p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.fecha span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*---------- TURNOS ----------*/
+
+.container-turno {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--card-and-header);
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.turno {
+    padding: 10px;
+    width: 40%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.turno p {
+    color: white;
+    font-weight: 600;
+}
+
+.turno span {
+    font-size: 12px;
+    color: white;
+    font-weight: 200;
+}
+
+.button-turno {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}
+
+button {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*------ DOCTOR -------*/
+.doctor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    padding: 10px 10px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.doctor img {
+    width: 30px;
+    height: 30px;
+    border: solid;
+    border-radius: 50%;
+    border-color: var(--border-icon);
+    border-width: 2px;
+}
+
+.doctor p {
+    color: white;
+    font-size: 14px;
+}
+
+
